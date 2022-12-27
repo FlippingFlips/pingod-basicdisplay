@@ -1,0 +1,40 @@
+﻿<Project Sdk="Godot.NET.Sdk/3.3.0">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="addons\PinGodGame\assets\audio\music\**" />
+    <Compile Remove="addons\PinGodGame\assets\audio\sfx\**" />
+    <Compile Remove="addons\PinGodGame\assets\audio\voice\**" />
+    <EmbeddedResource Remove="addons\PinGodGame\assets\audio\music\**" />
+    <EmbeddedResource Remove="addons\PinGodGame\assets\audio\sfx\**" />
+    <EmbeddedResource Remove="addons\PinGodGame\assets\audio\voice\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="addons\PinGodGame\assets\fonts\" />
+    <Folder Include="addons\PinGodGame\assets\audio\" />
+    <Folder Include="addons\PinGodGame\assets\img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="addons\PinGodGame\Localization\pingod_default_lang.csv" />
+    <None Include="addons\PinGodGame\Localization\pingod_default_lang.csv.import" />
+    <None Include="default_bus_layout.tres" />
+    <None Include="export_presets.cfg" />
+    <None Include="game\Game.tscn" />
+    <None Include="game\MainScene.tscn" />
+    <None Include="game\PinGodGame.tscn" />
+    <None Include="project.godot" />
+    <None Include="readme.md" />
+    <None Include="recordings\drain_3_balls.record" />
+    <None Include="scenes\MyScene.tscn" />
+    <None Include="temp\.gdignore" />
+    <None Include="temp\readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+  </ItemGroup>
+</Project>

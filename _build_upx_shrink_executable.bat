@@ -1,0 +1,2 @@
+cd BasicGameVisualPinball
+upx *.exe
